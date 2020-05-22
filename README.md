@@ -1,11 +1,23 @@
 # Brain-Image-Segmentation
-Brain tumor segmentation using a 3D UNet CNN
 
-I used Keras with a Tensorflow backend. This UNet was built for the following dataset: https://figshare.com/articles/brain_tumor_dataset/1512427
+Segmentation of brain tissues in MRI image has a number of applications in diagnosis, surgical planning, and treatment of brain abnormalities. However, it is a time-consuming task to be performed by medical experts. In addition to that, it is challenging due to intensity overlap between the different tissues caused by the intensity homogeneity and artifacts inherent to MRI. Tominimize this effect, it was proposed to apply histogram based preprocessing. The goal of this project was to develop a robust and automatic segmentation of the human brain.
 
-3064 T1-weighted contrast-inhanced images with three kinds of brain tumor are provided in the dataset.
+To tackle the problem, I have used a Convolutional Neural Network (CNN) based approach. U-net is one of the most commonly used and best-performing architecture in medical image segmentation. This moodel consists of the 2-D implementation of the U-Net.The performance was evaluated using Dice Coefficient (DSC).
+
+
+### Dataset
+This model was built for the following dataset: https://figshare.com/articles/brain_tumor_dataset/1512427
+
+3064 T1-weighted contrast-inhanced images with three kinds of brain tumor are provided in the dataset.The three types of tumor are 
+
+1.Glioma
+2.Pituitary Tumor
+3.Meningioma
 
 ![dataset](./images/dataset.png)
+
+
+### Model Architecture
 
 The first half of the U-net is effectively a typical convolutional neural network like one would construct for an image classification task, with successive rounds of zero-padded ReLU-activated convolutions and ReLU-activated max-pooling layers. Instead of classification occurring at the "bottom" of the U, symmetrical upsampling and convolution layers are used to bring the pixel-wise prediction layer back to the original dimensions of the input image.
 
