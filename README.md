@@ -61,6 +61,16 @@ Tips for improving model:
 -Consider different loss functions. The default loss function here is a binary_crossentropy. Different loss functions yield different loss curves and may result in better accuracy. However, you may need to adjust the learning_rate and number of epochs to train as you experiment with different loss functions. 
 -Try exceuting other U-Net architectures in the model folders.
 
+### Libraries Used
+The code has been tested with the following configuration
+
+- h5py == 
+- keras == 
+- nibabel == 
+- scipy == 0.19.0
+- sckit-learn == 0.18.1
+- tensorflow == 
+- tensorflow-gpu == 
 
 The UNet was based on this paper: https://arxiv.org/abs/1802.10508
 
