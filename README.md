@@ -29,13 +29,13 @@ Here's an example of the correlation between my predictions in a single 2D plane
 
 Ground Truth:               |  Prediction:
 :-------------------------:|:-------------------------:
-![ground truth](./images/gt_2.png)  |  ![prediction](./images/pred_2.png)
+!(./images/gt_2.png)  |  !(./images/pred_2.png)
 
 
 
 Ground Truth:               |  Prediction:
 :-------------------------:|:-------------------------:
-![ground truth](./images/gt_1.png)  |  ![prediction](./images/pred_1.png)
+!(./images/gt_1.png)  |  !(./images/pred_1.png)
 
 Tips for improving model:
 
