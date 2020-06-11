@@ -25,34 +25,17 @@ Here is the architecture for the 2D U-Net from the original publication mentione
 
 ![u-net-architecture](./images/u-net-architecture.png)
 
-### Visualization of the dataset
-
-[Notebook](Data-Visualization) to visualize:
-- the repartition of classes
-- the 2D slices with the tumor mask
-- the tumors
-
-### Model 
-
-[Notebook](Model) to visualize:
--Building the U-Net architecture
--Fitting the model
--Evaluate Model
--Make Prediction
-
-
-
 Here's an example of the correlation between my predictions in a single 2D plane:
 
 Ground Truth:               |  Prediction:
 :-------------------------:|:-------------------------:
-![ground truth](./images/Ground_Truth_Example.png)  |  ![prediction](./images/Prediction_Example.png)
+![ground truth](./images/gt_2.png)  |  ![prediction](./images/pred_2.png)
 
-Here's an example of the correlation between my predictions in a rotating 3D volume plane:
+
 
 Ground Truth:               |  Prediction:
 :-------------------------:|:-------------------------:
-![ground truth](./images/groundtruth_rotation_example.gif)  |  ![prediction](./images/prediction_rotation_example.gif)
+![ground truth](./images/gt_1.png)  |  ![prediction](./images/pred_1.png)
 
 Tips for improving model:
 
@@ -64,17 +47,13 @@ Tips for improving model:
 ### Libraries Used
 The code has been tested with the following configuration
 
-- h5py == 
-- keras == 
-- nibabel == 
+- h5py == 2.10.0
+- keras == 2.3.1
 - scipy == 0.19.0
 - sckit-learn == 0.18.1
-- tensorflow == 
-- tensorflow-gpu == 
+- tensorflow == 2.2.0
+- tgpu == NVIDIA Tesla K80 (Google Colab)
 
 The UNet was based on this paper: https://arxiv.org/abs/1802.10508
 
-I heavily modified code from the following sources to get this project to work:
-
-- Original code for building the UNet was from this repo: https://github.com/ellisdg/3DUnetCNN
 
