@@ -27,13 +27,13 @@ Here is the architecture for the 2D U-Net from the original publication mentione
 
 Here's an example of the correlation between my predictions in a single 2D plane:
 
-Ground Truth:               |  Prediction:
+Ground Truth: |  Prediction:
 :-------------------------:|:-------------------------:
 ![ground truth](./images/gt_2.png)  |  ![prediction](./images/pred_2.png)
 
 
 
-Ground Truth:               |  Prediction:
+Ground Truth: |  Prediction:
 :-------------------------:|:-------------------------:
 ![ground truth](./images/gt_1.png)  |  ![prediction](./images/pred_1.png)
 
