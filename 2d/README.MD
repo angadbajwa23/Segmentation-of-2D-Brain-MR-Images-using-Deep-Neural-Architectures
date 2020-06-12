@@ -1,18 +1,18 @@
-Data Exploration
+## Data Exploration
 To download, visualize and preprocess the dataset.
 
-models
+## models
 The three models used are U-Net, Attention U-Net and M-Net.
 
-evaluation
+## evaluation
 Testing the models on the test set
 
-predictions
+## predictions
 Making prediction on unseen data
 
 Use the three notebooks to see all the above combined.
 
-Comparitive Analysis
+## Comparitive Analysis
 | Model  | epochs | Loss_function | dice_coef |
 | ------------- | ------------- | ------------- | -------------|
 | U-Net  | 50  | 0.0577790886 | 0.672770553 |
