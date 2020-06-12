@@ -12,7 +12,7 @@ Making prediction on unseen data
 
 Use the three notebooks to see all the above combined.
 
-## Comparitive Analysis
+## Comparative Analysis
 | Model  | epochs | Loss_function | dice_coef |
 | ------------- | ------------- | ------------- | -------------|
 | U-Net  | 50  | 0.0577790886 | 0.672770553 |
