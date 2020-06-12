@@ -32,16 +32,6 @@ Example 1:               |  Example 2:
 ![ground truth](./images/gt_2.png)  |  ![prediction](./images/gt_1.png)
 
 
-Tips for improving model:
-
--The feature maps have been reduced so that the model will train using under 12GB of memory. If you have more memory to use, consider increasing the feature maps this will increase the complexity of the model (which will also increase its memory footprint but decrease its execution speed).
-
--If you choose a subset with larger tensors (e.g. liver or lung), it is recommended to add another maxpooling level (and corresponding upsampling) to the U-Net model. This will of course increase the memory requirements and decrease execution speed, but should give better results because it considers an additional recepetive field/spatial size.
-
--Consider different loss functions. The default loss function here is a binary_crossentropy. Different loss functions yield different loss curves and may result in better accuracy. However, you may need to adjust the learning_rate and number of epochs to train as you experiment with different loss functions. 
-
--Try exceuting other U-Net architectures in the model folders.
-
 ### Libraries Used
 The code has been tested with the following configuration
 
@@ -53,5 +43,17 @@ The code has been tested with the following configuration
 - tgpu == NVIDIA Tesla K80 (Google Colab)
 
 The UNet was based on this paper: https://arxiv.org/abs/1802.10508
+
+Tips for improving model:
+
+-The feature maps have been reduced so that the model will train using under 12GB of memory. If you have more memory to use, consider increasing the feature maps this will increase the complexity of the model (which will also increase its memory footprint but decrease its execution speed).
+
+-If you choose a subset with larger tensors (e.g. liver or lung), it is recommended to add another maxpooling level (and corresponding upsampling) to the U-Net model. This will of course increase the memory requirements and decrease execution speed, but should give better results because it considers an additional recepetive field/spatial size.
+
+-Consider different loss functions. The default loss function here is a binary_crossentropy. Different loss functions yield different loss curves and may result in better accuracy. However, you may need to adjust the learning_rate and number of epochs to train as you experiment with different loss functions. 
+
+-Try exceuting other U-Net architectures in the model folders.
+
+
 
 
