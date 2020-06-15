@@ -2,7 +2,7 @@
 To download, visualize and preprocess the dataset.
 
 ## models
-The three models used are U-Net, Attention U-Net and M-Net.
+The three models used are U-Net, Res+U-Net and M-Net.
 
 ## evaluation
 Testing the models on the test set
