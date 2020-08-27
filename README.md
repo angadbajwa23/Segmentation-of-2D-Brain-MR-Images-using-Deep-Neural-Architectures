@@ -52,7 +52,7 @@ Tips for improving model:
 
 -Consider different loss functions. The default loss function here is a binary_crossentropy. Different loss functions yield different loss curves and may result in better accuracy. However, you may need to adjust the learning_rate and number of epochs to train as you experiment with different loss functions. 
 
--Try exceuting other U-Net architectures in the model folders.
+-Try exceuting other U-Net architectures in the 2d/model folders.
 
 
 
