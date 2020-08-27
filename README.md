@@ -42,7 +42,7 @@ The code has been tested with the following configuration
 - tensorflow == 2.2.0
 - tgpu == NVIDIA Tesla K80 (Google Colab)
 
-The UNet was based on this paper: https://arxiv.org/abs/1802.10508
+The U-Net was based on this paper: https://arxiv.org/abs/1802.10508
 
 Tips for improving model:
 
