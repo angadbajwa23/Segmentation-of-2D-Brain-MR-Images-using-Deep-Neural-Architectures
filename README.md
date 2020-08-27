@@ -8,7 +8,7 @@ To tackle the problem, I have used a Convolutional Neural Network (CNN) based ap
 ### Dataset
 This model was built for the following dataset: https://figshare.com/articles/brain_tumor_dataset/1512427
 
-3064 T1-weighted contrast-inhanced images with three kinds of brain tumor are provided in the dataset.The three types of tumor are 
+3064 T1-weighted contrast-inhanced images with three kinds of brain tumor are provided in  the dataset.The three types of tumor are 
 
 1.Glioma
 2.Pituitary Tumor
