@@ -54,6 +54,21 @@ Tips for improving model:
 
 -Try exceuting other U-Net architectures in the 2d/model folders.
 
+### Upsampling: Conv2DTranspose vs UpSampling2D
+In the decoder (expanding path) of U-Net architectures, upsampling can be performed using either `Conv2DTranspose` (transposed convolution) or `UpSampling2D` (followed by a convolution). Both have their own advantages and trade-offs:
+
+**Conv2DTranspose (Transposed Convolution):**
+- Learns the upsampling operation as part of the network, allowing for more flexible and potentially more accurate feature reconstruction.
+- Can reduce checkerboard artifacts when properly configured.
+- Slightly higher computational cost and more parameters compared to simple upsampling.
+
+**UpSampling2D (with Conv2D):**
+- Performs a fixed upsampling (e.g., nearest neighbor or bilinear), then applies a convolution.
+- Simpler and faster, with fewer parameters.
+- May not capture complex upsampling patterns as effectively as transposed convolution.
+
+
+
 
 
 
